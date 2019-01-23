@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  form(method='POST' action='result')
+    input(
+      type='text'
+      name='ig_handle'
+      placeholder='Instagram Handle'
+    )
+    input(
+      type='submit'
+      value='Submit'
+    )
+  
