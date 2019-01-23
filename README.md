@@ -12,6 +12,8 @@ Then run **npm start** and input your Instagram Handle (username). That's it!
 ```
 npm start
 ```
+Finally, go to your favorite browser and visit
+http://localhost:3000/
 
 ## Watching changes
 If you want to make changes and reflect it on the fly install **nodemon**
