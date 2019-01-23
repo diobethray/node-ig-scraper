@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  a(href="/" class="back")= '< Back'
+  div(class="result")
+    img(src= user.profile_pic_url)
+    h1= user.name
+    p= user.description
+    p(class="edge")
+      span
+        strong= user.followers
+        =' followers'
+      span
+        strong= user.following
+        =' following'
+    if user.is_private
+      h2(class="private-account")='This Account is Private'
+    else
+      div(class="post")
+        each post in posts
+          a(href=post.display_url target="_blank")
+            img(src=post.thumbnail)
+            span= post.media_id
+      
